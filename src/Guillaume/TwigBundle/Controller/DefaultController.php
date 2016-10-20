@@ -10,4 +10,12 @@ class DefaultController extends Controller
     {
         return $this->render('GuillaumeTwigBundle:Default:index.html.twig');
     }
+    public function siAction()
+    {
+        return $this->render('GuillaumeTwigBundle:Default:si.html.twig');
+    }
+    public function bouclesAction()
+    {
+        return $this->render('GuillaumeTwigBundle:Default:boucles.html.twig');
+    }
 }

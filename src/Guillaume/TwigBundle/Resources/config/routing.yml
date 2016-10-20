@@ -1,3 +1,11 @@
 guillaume_twig_homepage:
     path:     /
     defaults: { _controller: GuillaumeTwigBundle:Default:index }
+    
+guillaume_twig_si:
+    path:     /si
+    defaults: { _controller: GuillaumeTwigBundle:Default:si }
+    
+guillaume_twig_boucles:
+    path:     /boucles
+    defaults: { _controller: GuillaumeTwigBundle:Default:boucles }

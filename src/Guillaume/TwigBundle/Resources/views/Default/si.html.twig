@@ -1,0 +1,66 @@
+{% extends "GuillaumeRacineBundle::layout.html.twig" %}
+{% block inmenu %}
+    <ul class="nav navbar-nav">
+    <li><a href="{{path("guillaume_racine_homepage")}}">Home</a></li>
+    <li class="active"><a href="{{path("guillaume_twig_homepage")}}">Vers Twig</a></li>
+    <li><a href="">Vers Crud</a></li>
+</ul>
+{% endblock %}
+{% block sousmenu %}{% include "GuillaumeTwigBundle:Default:menu.html.twig" %}{% endblock %}
+{% block incorps %}
+    <h1>Conditions twig</h1>
+    <br/><br/>
+    <h3>Une variable est-elle égale a un mot ?</h3>
+        {% raw %}
+        {% set poisson = 'avril' %}<br/>
+        {% if poisson == 'avril' %}<br/>
+            La variable poisson est égale a avril.<br/>
+            {% else %}<br/>
+                La variable poisson est égale a autre chose qu'avril.<br/>
+        {% endif %}<br/>
+        {% endraw %}
+        <br/>
+    <h3>Résultat :</h3>
+        {% set poisson = 'avril' %}
+        {% if poisson == 'avril' %}
+            La variable poisson est égale a avril.
+            {% else %}
+                La variable poisson est égale a autre chose qu'avril.
+        {% endif %}
+        <br/><br/>
+    <h3>Une variable est-elle égale a un nombre ?</h3>
+        {% raw %}
+        {% set nombre = 1 %}<br/>
+        {% if nombre == 1 %}<br/>
+            La variable nombre est égale a 1.<br/>
+            {% else %}<br/>
+                La variable nombre est égale a autre chose qu'a 1.<br/>
+        {% endif %}<br/>
+        {% endraw %}
+        <br/>
+    <h3>Résultat :</h3>
+        {% set nombre = 1 %}
+        {% if nombre == 1 %}
+            La variable nombre est égale a 1.
+            {% else %}
+                La variable nombre est égale a autre chose qu'a 1.
+        {% endif %}
+        <br/><br/>
+    <h3>Une variable est-elle égale ou inférieur à un nombre ?</h3>
+        {% raw %}
+        {% set nombre = 25 %}<br/>
+        {% if nombre <= 10 %}<br/>
+            Le nombre est inférieur ou égale à 10.<br/>
+            {% else %}<br/>
+                Le nombre est supérieur a 10.<br/>
+        {% endif %}<br/>
+        {% endraw %}
+        <br/>
+    <h3>Résultat :</h3>
+        {% set nombre = 25 %}
+        {% if nombre <= 1 %}
+            Le nombre est inférieur ou égale à 10.
+            {% else %}
+                Le nombre est supérieur a 10.
+        {% endif %}
+{%endblock %}
