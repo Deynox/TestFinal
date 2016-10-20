@@ -8,5 +8,34 @@
 {% endblock %}
 {% block incorps %}
     <h1>CRUD</h1>
-    <a href="{{path("CRUD_article_index")}}">Liste des articles</a>
+    <h3><a href="{{path("CRUD_article_index")}}">Liste des articles</a></h3>
+    <br/>
+   <table>
+        <thead>
+            <tr>
+                <th width="20px">Id</th>
+                <th width="200px">Title</th>
+                <th width="300px">Texte</th>
+                <th width="100px">Auteur</th>
+                <th width="200px">Section</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td style="padding-left:5px;"><a href="{{ path('CRUD_article_show', { 'id': article.id }) }}">{{ article.id }}</a></td>
+                <td style="padding-left:5px;">{{ article.title }}</td>
+                <td style="padding-left:5px;">{{ article.texte }}</td>
+                <td style="padding-left:5px;">{{ article.utilisateur }}</td>
+                <td style="padding-left:5px;">
+                    {% for sec in article.section %}
+                    {{ sec }}
+                    {% endfor %}
+                </td>
+                <td style="padding-left:5px;">{% if article.date %}{{ article.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {%endblock %}

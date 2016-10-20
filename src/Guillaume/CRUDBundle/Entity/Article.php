@@ -1,7 +1,7 @@
 <?php
 
 namespace Guillaume\CRUDBundle\Entity;
-
+use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -47,7 +47,7 @@ class Article
      *
      * @ORM\ManyToOne(targetEntity="Utilisateur")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="utilisateurid", referencedColumnName="id")
      * })
      */
     private $utilisateur;
@@ -68,7 +68,9 @@ class Article
         $this->date = new \DateTime;
     }
 
-
+    public function __toString() {
+        return $this->section;
+    }
     /**
      * Get id
      *
