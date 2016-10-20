@@ -1,8 +1,13 @@
-{% extends 'base.html.twig' %}
-
-{% block body %}
+{% extends 'GuillaumeRacineBundle::layout.html.twig' %}
+{% block inmenu %}
+    <ul class="nav navbar-nav">
+    <li><a href="{{path("guillaume_racine_homepage")}}">Home</a></li>
+    <li><a href="{{path("guillaume_twig_homepage")}}">Vers Twig</a></li>
+    <li class="active"><a href="{{path("guillaume_crud_homepage")}}">Vers Crud</a></li>
+</ul>
+{% endblock %}
+{% block incorps %}
     <h1>Article</h1>
-
     <table>
         <tbody>
             <tr>
@@ -37,4 +42,4 @@
             {{ form_end(delete_form) }}
         </li>
     </ul>
-{% endblock %}
+{%endblock %}
