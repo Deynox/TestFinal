@@ -1,3 +1,7 @@
+guillaume_crud_article:
+    resource: "@GuillaumeCRUDBundle/Controller/ArticleController.php"
+    type:     annotation
+
 guillaume_crud:
     resource: "@GuillaumeCRUDBundle/Resources/config/routing.yml"
     prefix:   /CRUD
