@@ -1,0 +1,3 @@
+guillaume_twig_homepage:
+    path:     /
+    defaults: { _controller: GuillaumeTwigBundle:Default:index }

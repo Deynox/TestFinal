@@ -1,3 +1,7 @@
+guillaume_twig:
+    resource: "@GuillaumeTwigBundle/Resources/config/routing.yml"
+    prefix:   /GuillaumeTwig
+
 guillaume_racine:
     resource: "@GuillaumeRacineBundle/Resources/config/routing.yml"
     prefix:   /

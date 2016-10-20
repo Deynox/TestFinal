@@ -1,0 +1,4 @@
+services:
+#    guillaume_twig.example:
+#        class: Guillaume\TwigBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
