@@ -206,6 +206,13 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
                 0 => __DIR__ . '/..' . '/sensiolabs/security-checker',
             ),
         ),
+        'L' => 
+        array (
+            'Less' => 
+            array (
+                0 => __DIR__ . '/..' . '/oyejorge/less.php/lib',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\ORM\\' => 
@@ -259,6 +266,7 @@ class ComposerStaticInit0f13e4a9e54450a82fd992c5327ea391
         'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php54/Resources/stubs/SessionHandlerInterface.php',
         'SqlFormatter' => __DIR__ . '/..' . '/jdorn/sql-formatter/lib/SqlFormatter.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'lessc' => __DIR__ . '/..' . '/oyejorge/less.php/lessc.inc.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
