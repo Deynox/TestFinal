@@ -1,0 +1,3 @@
+guillaume_racine_homepage:
+    path:     /
+    defaults: { _controller: GuillaumeRacineBundle:Default:index }

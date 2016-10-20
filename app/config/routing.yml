@@ -1,0 +1,4 @@
+guillaume_racine:
+    resource: "@GuillaumeRacineBundle/Resources/config/routing.yml"
+    prefix:   /
+
