@@ -1,0 +1,4 @@
+services:
+#    guillaume_crud.example:
+#        class: Guillaume\CRUDBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

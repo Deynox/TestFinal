@@ -1,0 +1,3 @@
+guillaume_crud_homepage:
+    path:     /
+    defaults: { _controller: GuillaumeCRUDBundle:Default:index }

@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Guillaume\RacineBundle\GuillaumeRacineBundle(),
             new Guillaume\TwigBundle\GuillaumeTwigBundle(),
+            new Guillaume\CRUDBundle\GuillaumeCRUDBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
